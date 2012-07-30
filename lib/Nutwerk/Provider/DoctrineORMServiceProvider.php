@@ -21,7 +21,7 @@ use Silex\ServiceProviderInterface;
 class DoctrineORMServiceProvider implements ServiceProviderInterface
 {
     
-    public function boot()
+    public function boot(Application $app)
     {
         
     }
