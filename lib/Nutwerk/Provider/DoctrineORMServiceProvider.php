@@ -20,6 +20,12 @@ use Silex\ServiceProviderInterface;
 
 class DoctrineORMServiceProvider implements ServiceProviderInterface
 {
+    
+    public function boot()
+    {
+        
+    }
+    
     public function register(Application $app)
     {        
         $dbal = $app['db'];
