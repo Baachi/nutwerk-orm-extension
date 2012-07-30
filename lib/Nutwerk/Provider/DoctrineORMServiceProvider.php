@@ -97,8 +97,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
                     default:
                         throw new \InvalidArgumentException(sprintf('"%s" is not a recognized driver', $entity['type']));
                         break;
-                }
-                $app['autoloader']->registerNamespace($entity['namespace'], $entity['path']);
+                }                
             }
             $config->setMetadataDriverImpl($chain);
 
